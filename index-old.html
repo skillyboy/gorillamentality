@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Blogzine - Blog and Magazine Bootstrap 5 Theme</title>
+	<!-- Meta Tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="author" content="Webestica.com">
+	<meta name="description" content="Bootstrap based News, Magazine and Blog Theme">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="assets/images/favicon.ico">
+
+	<!-- Google Font -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+
+	<!-- Plugins CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap-icons/bootstrap-icons.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendor/tiny-slider/tiny-slider.css">
+  <link rel="stylesheet" type="text/css" href="assets/vendor/glightbox/css/glightbox.css">
+
+	<!-- Theme CSS -->
+	<link id="style-switch" rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+
+<!-- **************** MAIN CONTENT START **************** -->
+<main>
+
+	
+	<nav>
+		<div class="video-container" style="position: relative; padding-bottom: 56.25%; /* 16:9 Aspect Ratio */">
+    <!-- Vimeo Video Embed with Autoplay and Mute -->
+    <iframe src="https://player.vimeo.com/video/76979871?h=8272103f6e&autoplay=1&muted=1" 
+            width="100%" height="100%" 
+            frameborder="0" 
+            allow="autoplay; fullscreen;" 
+            allowfullscreen 
+            style="position: absolute; top: 0; left: 0; pointer-events: auto;">
+    </iframe>
+	
+			<!-- Logo Overlay on Video -->
+			<div class="logo-overlay">
+				<img src="assets/images/mask/logo.png" alt="Gorilla Mentality Logo" class="logo-image">
+			</div>
+		</div>
+		
+		
+		<style>
+			/* Video Container Styling */
+			.video-container {
+				position: relative;
+				width: 100%;
+				height: 0;
+				overflow: hidden;
+				padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+			}
+		
+			/* Logo Overlay Styling */
+			.logo-overlay {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				background-color: rgba(255, 255, 255, 0.6); /* Semi-transparent background */
+				padding: 10px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				border: 2px solid #008080; /* Border color */
+				width: 100%; /* Extends to 100% of video width */
+				height: 100%; 
+			}
+		
+		</style>
+	</nav>
+	
+	
+	
+	
+	
+	
+	
+
+
+<section class="bg-light py-5 body">
+	<!-- Portfolio Header with YouTube Button -->
+	<div class="d-flex justify-content-between align-items-center mb-4">
+		<h2 class="text-dark m-0"></h2>
+		<a href="#" class="btn btn-sm bg-youtube text-white">
+			<i class="bi bi-youtube me-2 align-middle"></i>Subscribe on YouTube
+		</a>
+	</div>
+	<div class="container shadow-container">
+	
+		<!-- Category Toggle Buttons -->
+		<div class="text-center mb-4">
+			<button class="btn btn-outline-secondary me-2 toggle-btn" data-category="all">All</button>
+			<button class="btn btn-outline-secondary me-2 toggle-btn" data-category="music">Music Videos</button>
+			<button class="btn btn-outline-secondary me-2 toggle-btn" data-category="commercials">Commercials</button>
+			<button class="btn btn-outline-secondary me-2 toggle-btn" data-category="films">Documentaries</button>
+			<button class="btn btn-outline-secondary me-2 toggle-btn" data-category="photos">Photography</button>
+			<button class="btn btn-outline-secondary me-2 toggle-btn" data-category="events">Events</button>
+			<button class="btn btn-outline-secondary me-2 toggle-btn" data-category="info">Information</button>
+			<button class="btn btn-outline-secondary" onclick="scrollToInfo()">Bio</button>
+			<button class="btn btn-outline-secondary" onclick="scrollToCollaborators()">Collaborators</button>
+		</div>
+	</div>
+	
+	<style>
+		/* Styling the container with a border, shadow, and padding */
+		.shadow-container {
+			border: 3px solid #008080;  /* Border color matching theme */
+			padding: 20px;
+			border-radius: 12px;        /* Adds rounded corners for a softer look */
+			box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+			background-color: #f9f9f9;  /* Light background to create contrast */
+		}
+	
+		/* Button styling with theme colors */
+		.btn-outline-secondary {
+			border: 2px solid #008080; /* Match button border to theme */
+			color: #008080;
+			transition: background-color 0.3s ease, color 0.3s ease;
+		}
+		
+		.btn-outline-secondary:hover,
+		.toggle-btn.active {
+			background-color: #008080;
+			color: #ffffff;
+		}
+	</style>
+	
+</section>
+
+	  <style>
+		.category-content {
+		  display: none;
+		}
+		.active-category {
+		  display: block;
+		}
+		.card {
+		  border: 1px solid #e3e3e3;
+		  border-radius: 8px;
+		  overflow: hidden;
+		  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+		}
+		.card:hover {
+		  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+		  background-color: #f8f9fa;
+		}
+	  </style>
+  
+
+
+
+	  
+	  <!-- Content Sections -->
+	  <div class="container mt-4">
+  
+		<!-- Category Content: Music -->
+		<section class="category-content" id="music"><br>
+
+		  <!-- Card small START -->
+			<div class="container mt-4">
+				<div class="row d-flex justify-content-start"> <!-- Added d-flex and justify-content-start for horizontal alignment -->
+				<div class="col-sm-6 col-lg-3 mb-4"> <!-- Added margin-bottom for spacing between rows -->
+					<!-- Card item START -->
+					<div class="card bg-transparent overflow-hidden">
+					<!-- Card img -->
+					<div class="position-relative rounded-3 overflow-hidden">
+						<img class="card-img" src="assets/images/blog/16by9/small/05.jpg" alt="Card image">
+						<div class="card-img-overlay d-flex align-items-start flex-column p-3">
+						<!-- Card overlay -->
+						<div class="w-100 my-auto">
+							<!-- Popup video -->
+							<div class="vimeo-video-container">
+								<iframe src="https://player.vimeo.com/video/76979871" 
+								width="100%" height="100%" frameborder="0" 
+								allow="autoplay; fullscreen; " allowfullscreen>
+								</iframe>
+								<i class="bi bi-play-btn"></i>
+						
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="card-body px-0 pt-3">
+						
+						<h5 class="card-title"><a href="podcast-single.html" class="btn-link text-white fw-bold">Bad habits that people in the industry need to quit</a></h5>
+						<!-- Card info -->
+						<ul class="nav nav-divider align-items-center d-none d-sm-inline-block text-white-force small opacity-6">
+						<li class="nav-item">
+							<div class="nav-link">
+							by <a href="#" class="text-reset btn-link">Bryan</a>
+							</div>
+						</li>
+						<li class="nav-item">Jun 17, 2022</li>
+						</ul>
+					</div>
+					</div>
+					<!-- Card item END -->
+				</div>
+			
+				<div class="col-sm-6 col-lg-3 mb-4">
+					<!-- Card item START -->
+					<div class="card bg-transparent overflow-hidden">
+					<!-- Card img -->
+					<div class="position-relative rounded-3 overflow-hidden">
+						<img class="card-img" src="assets/images/blog/16by9/small/06.jpg" alt="Card image">
+						<div class="card-img-overlay d-flex align-items-start flex-column p-3">
+						<!-- Card overlay -->
+						<div class="w-100 my-auto">
+							<!-- Popup video -->
+							<a href="https://youtu.be/n_Cn8eFo7u8" class="icon-md bg-primary d-block mx-auto text-white rounded-circle" data-glightbox data-gallery="y-video">
+							<i class="bi bi-play-btn"></i>
+							</a>
+						</div>
+						</div>
+					</div>
+					<div class="card-body px-0 pt-3">
+						<h5 class="card-title"><a href="podcast-single.html" class="btn-link text-white fw-bold">12 worst types of business accounts you follow on Twitter</a></h5>
+						<!-- Card info -->
+						<ul class="nav nav-divider align-items-center d-none d-sm-inline-block text-white-force small opacity-6">
+						<li class="nav-item">
+							<div class="nav-link">
+							by <a href="#" class="text-reset btn-link">Samuel</a>
+							</div>
+						</li>
+						<li class="nav-item">Jan 22, 2022</li>
+						</ul>
+					</div>
+					</div>
+					<!-- Card item END -->
+				</div>
+			
+				<div class="col-sm-6 col-lg-3 mb-4">
+					<!-- Card item START -->
+					<div class="card bg-transparent overflow-hidden">
+					<!-- Card img -->
+					<div class="position-relative rounded-3 overflow-hidden">
+						<img class="card-img" src="assets/images/blog/16by9/small/07.jpg" alt="Card image">
+						<div class="card-img-overlay d-flex align-items-start flex-column p-3">
+						<!-- Card overlay -->
+						<div class="w-100 my-auto">
+							<!-- Popup video -->
+							<a href="https://youtu.be/n_Cn8eFo7u8" class="icon-md bg-primary d-block mx-auto text-white rounded-circle" data-glightbox data-gallery="y-video">
+							<i class="bi bi-play-btn"></i>
+							</a>
+						</div>
+						</div>
+					</div>
+					<div class="card-body px-0 pt-3">
+						<h5 class="card-title"><a href="podcast-single.html" class="btn-link text-white fw-bold">Best Twitter accounts for learning about investment</a></h5>
+						<!-- Card info -->
+						<ul class="nav nav-divider align-items-center d-none d-sm-inline-block text-white-force small opacity-6">
+						<li class="nav-item">
+							<div class="nav-link">
+							by <a href="#" class="text-reset btn-link">Joan</a>
+							</div>
+						</li>
+						<li class="nav-item">Mar 24, 2022</li>
+						</ul>
+					</div>
+					</div>
+					<!-- Card item END -->
+				</div>
+			
+				<div class="col-sm-6 col-lg-3 mb-4">
+					<!-- Card item START -->
+					<div class="card bg-transparent overflow-hidden">
+					<!-- Card img -->
+					<div class="position-relative rounded-3 overflow-hidden">
+						<img class="card-img" src="assets/images/blog/16by9/small/08.jpg" alt="Card image">
+						<div class="card-img-overlay d-flex align-items-start flex-column p-3">
+						<!-- Card overlay -->
+						<div class="w-100 my-auto">
+							<!-- Popup video -->
+							<a href="https://youtu.be/n_Cn8eFo7u8" class="icon-md bg-primary d-block mx-auto text-white rounded-circle" data-glightbox data-gallery="y-video">
+							<i class="bi bi-play-btn"></i>
+							</a>
+						</div>
+						</div>
+					</div>
+					<div class="card-body px-0 pt-3">
+						<h5 class="card-title"><a href="podcast-single.html" class="btn-link text-white fw-bold">Ten questions you should answer truthfully</a></h5>
+						<!-- Card info -->
+						<ul class="nav nav-divider align-items-center d-none d-sm-inline-block text-white-force small opacity-6">
+						<li class="nav-item">
+							<div class="nav-link">
+							by <a href="#" class="text-reset btn-link">Judy</a>
+							</div>
+						</li>
+						<li class="nav-item">Sep 07, 2022</li>
+						</ul>
+					</div>
+					</div>
+					<!-- Card item END -->
+				</div>
+				</div>
+			</div>
+			 <!-- Card small END -->
+  
+		</section>
+  
+		<!-- Category Content: Commercials -->
+		<section class="category-content" id="commercials">
+
+		</section>
+  
+		<!-- Category Content: Films -->
+		<section class="category-content " id="films">
+			<!-- Card small START -->
+			<div class="container text-dark mt-4">
+			  <div class="row d-flex justify-content-start">
+				
+				<!-- Video 1 -->
+				<div class="col-sm-6 col-lg-3 mb-4">
+				  <div class="card bg-transparent overflow-hidden">
+					<div class="position-relative rounded-3 overflow-hidden">
+					  <div class="vimeo-video-container">
+						<iframe 
+						  src="https://www.youtube.com/embed/caHYdPG0sCI" 
+
+						  width="100%" 
+						  height="200" 
+						  frameborder="0" 
+						  allow="autoplay; encrypted-media; picture-in-picture" 
+						  allowfullscreen>
+						</iframe>
+					  </div>
+					</div>
+					<div class="card-body px-0 pt-3">
+					  <h5 class="card-title text-white fw-bold">Video 1</h5>
+					</div>
+				  </div>
+				</div>
+		  
+				<!-- Video 2 -->
+				<div class="col-sm-6 col-lg-3 mb-4">
+				  <div class="card bg-transparent overflow-hidden">
+					<div class="position-relative rounded-3 overflow-hidden">
+					  <div class="vimeo-video-container">
+						<iframe 
+						  src="https://www.youtube.com/embed/caHYdPG0sCI" 
+						  width="100%" 
+						  height="200" 
+						  frameborder="0" 
+						  allow="autoplay; encrypted-media; picture-in-picture" 
+						  allowfullscreen>
+						</iframe>
+					  </div>
+					</div>
+					<div class="card-body px-0 pt-3">
+					  <h5 class="card-title text-white fw-bold">Video 2</h5>
+					</div>
+				  </div>
+				</div>
+		  
+				<!-- Video 3 -->
+				<div class="col-sm-6 col-lg-3 mb-4">
+				  <div class="card bg-transparent overflow-hidden">
+					<div class="position-relative rounded-3 overflow-hidden">
+					  <div class="vimeo-video-container">
+						<iframe 
+						  src="https://www.youtube.com/embed/EI0snblr7q8" 
+						  width="100%" 
+						  height="200" 
+						  frameborder="0" 
+						  allow="autoplay; encrypted-media; picture-in-picture" 
+						  allowfullscreen>
+						</iframe>
+					  </div>
+					</div>
+					<div class="card-body px-0 pt-3">
+					  <h5 class="card-title text-white fw-bold">Video 3</h5>
+					</div>
+				  </div>
+				</div>
+		  
+				<!-- Repeat for remaining videos -->
+				<!-- Video 4 -->
+				<div class="col-sm-6 col-lg-3 mb-4">
+				  <div class="card bg-transparent overflow-hidden">
+					<div class="position-relative rounded-3 overflow-hidden">
+					  <div class="vimeo-video-container">
+						<iframe 
+						  src="https://www.youtube.com/embed/RayzG7M4B_w" 
+						  width="100%" 
+						  height="200" 
+						  frameborder="0" 
+						  allow="autoplay; encrypted-media; picture-in-picture" 
+						  allowfullscreen>
+						</iframe>
+					  </div>
+					</div>
+					<div class="card-body px-0 pt-3">
+					  <h5 class="card-title text-white fw-bold">Video 4</h5>
+					</div>
+				  </div>
+				</div>
+		  
+				<!-- Add additional video cards for other YouTube links similarly -->
+		  
+			  </div>
+			</div>
+		  </section>
+		  
+  
+		<!-- Category Content: Photos -->
+		<section class="category-content" id="photos">
+
+			<!-- Card small START -->
+			<div class="container text-dark mt-4">
+				<div class="row d-flex justify-content-start">
+				  
+				  <!-- Video 1 -->
+				  <div class="col-sm-6 col-lg-3 mb-4">
+					<div class="card bg-transparent overflow-hidden">
+					  <div class="position-relative rounded-3 overflow-hidden">
+						<div class="vimeo-video-container">
+						  <iframe 
+							src="https://www.youtube.com/embed/caHYdPG0sCI" 
+  
+							width="100%" 
+							height="200" 
+							frameborder="0" 
+							allow="autoplay; encrypted-media; picture-in-picture" 
+							allowfullscreen>
+						  </iframe>
+						</div>
+					  </div>
+					  <div class="card-body px-0 pt-3">
+						<h5 class="card-title text-white fw-bold">Video 1</h5>
+					  </div>
+					</div>
+				  </div>
+			
+				  <!-- Video 2 -->
+				  <div class="col-sm-6 col-lg-3 mb-4">
+					<div class="card bg-transparent overflow-hidden">
+					  <div class="position-relative rounded-3 overflow-hidden">
+						<div class="vimeo-video-container">
+						  <iframe 
+							src="https://www.youtube.com/embed/caHYdPG0sCI" 
+							width="100%" 
+							height="200" 
+							frameborder="0" 
+							allow="autoplay; encrypted-media; picture-in-picture" 
+							allowfullscreen>
+						  </iframe>
+						</div>
+					  </div>
+					  <div class="card-body px-0 pt-3">
+						<h5 class="card-title text-white fw-bold">Video 2</h5>
+					  </div>
+					</div>
+				  </div>
+			
+				  <!-- Video 3 -->
+				  <div class="col-sm-6 col-lg-3 mb-4">
+					<div class="card bg-transparent overflow-hidden">
+					  <div class="position-relative rounded-3 overflow-hidden">
+						<div class="vimeo-video-container">
+						  <iframe 
+							src="https://www.youtube.com/embed/EI0snblr7q8" 
+							width="100%" 
+							height="200" 
+							frameborder="0" 
+							allow="autoplay; encrypted-media; picture-in-picture" 
+							allowfullscreen>
+						  </iframe>
+						</div>
+					  </div>
+					  <div class="card-body px-0 pt-3">
+						<h5 class="card-title text-white fw-bold">Video 3</h5>
+					  </div>
+					</div>
+				  </div>
+			
+				  <!-- Repeat for remaining videos -->
+				  <!-- Video 4 -->
+				  <div class="col-sm-6 col-lg-3 mb-4">
+					<div class="card bg-transparent overflow-hidden">
+					  <div class="position-relative rounded-3 overflow-hidden">
+						<div class="vimeo-video-container">
+						  <iframe 
+							src="https://www.youtube.com/embed/RayzG7M4B_w" 
+							width="100%" 
+							height="200" 
+							frameborder="0" 
+							allow="autoplay; encrypted-media; picture-in-picture" 
+							allowfullscreen>
+						  </iframe>
+						</div>
+					  </div>
+					  <div class="card-body px-0 pt-3">
+						<h5 class="card-title text-white fw-bold">Video 4</h5>
+					  </div>
+					</div>
+				  </div>
+			
+				  <!-- Add additional video cards for other YouTube links similarly -->
+			
+				</div>
+			  </div>
+		</section>
+  
+		<!-- Category Content: Information -->
+		<section class="category-content" id="information">
+
+			<br>
+			<!-- Card small START -->
+			<div class="container text-dark mt-4">
+				<div class="row d-flex justify-content-start">
+				  
+				  <!-- Video 1 -->
+				  <div class="col-sm-6 col-lg-3 mb-4">
+					<div class="card bg-transparent overflow-hidden">
+					  <div class="position-relative rounded-3 overflow-hidden">
+						<div class="vimeo-video-container">
+						  <iframe 
+							src="https://www.youtube.com/embed/caHYdPG0sCI" 
+  
+							width="100%" 
+							height="200" 
+							frameborder="0" 
+							allow="autoplay; encrypted-media; picture-in-picture" 
+							allowfullscreen>
+						  </iframe>
+						</div>
+					  </div>
+					  <div class="card-body px-0 pt-3">
+						<h5 class="card-title text-white fw-bold">Video 1</h5>
+					  </div>
+					</div>
+				  </div>
+			
+				  <!-- Video 2 -->
+				  <div class="col-sm-6 col-lg-3 mb-4">
+					<div class="card bg-transparent overflow-hidden">
+					  <div class="position-relative rounded-3 overflow-hidden">
+						<div class="vimeo-video-container">
+						  <iframe 
+							src="https://www.youtube.com/embed/caHYdPG0sCI" 
+							width="100%" 
+							height="200" 
+							frameborder="0" 
+							allow="autoplay; encrypted-media; picture-in-picture" 
+							allowfullscreen>
+						  </iframe>
+						</div>
+					  </div>
+					  <div class="card-body px-0 pt-3">
+						<h5 class="card-title text-white fw-bold">Video 2</h5>
+					  </div>
+					</div>
+				  </div>
+			
+				  <!-- Video 3 -->
+				  <div class="col-sm-6 col-lg-3 mb-4">
+					<div class="card bg-transparent overflow-hidden">
+					  <div class="position-relative rounded-3 overflow-hidden">
+						<div class="vimeo-video-container">
+						  <iframe 
+							src="https://www.youtube.com/embed/EI0snblr7q8" 
+							width="100%" 
+							height="200" 
+							frameborder="0" 
+							allow="autoplay; encrypted-media; picture-in-picture" 
+							allowfullscreen>
+						  </iframe>
+						</div>
+					  </div>
+					  <div class="card-body px-0 pt-3">
+						<h5 class="card-title text-white fw-bold">Video 3</h5>
+					  </div>
+					</div>
+				  </div>
+			
+				  <!-- Repeat for remaining videos -->
+				  <!-- Video 4 -->
+				  <div class="col-sm-6 col-lg-3 mb-4">
+					<div class="card bg-transparent overflow-hidden">
+					  <div class="position-relative rounded-3 overflow-hidden">
+						<div class="vimeo-video-container">
+						  <iframe 
+							src="https://www.youtube.com/embed/RayzG7M4B_w" 
+							width="100%" 
+							height="200" 
+							frameborder="0" 
+							allow="autoplay; encrypted-media; picture-in-picture" 
+							allowfullscreen>
+						  </iframe>
+						</div>
+					  </div>
+					  <div class="card-body px-0 pt-3">
+						<h5 class="card-title text-white fw-bold">Video 4</h5>
+					  </div>
+					</div>
+				  </div>
+			
+				  <!-- Add additional video cards for other YouTube links similarly -->
+			
+				</div>
+			  </div>
+		</section>
+  
+		<!-- Category Content: Bio -->
+		<section class="category-content" id="bio">
+
+			<br>
+			<!-- Card small START -->
+			<div class="container text-dark mt-4">
+				<div class="row d-flex justify-content-start">
+				  
+				  <!-- Video 1 -->
+				  <div class="col-sm-6 col-lg-3 mb-4">
+					<div class="card bg-transparent overflow-hidden">
+					  <div class="position-relative rounded-3 overflow-hidden">
+						<div class="vimeo-video-container">
+						  <iframe 
+							src="https://www.youtube.com/embed/caHYdPG0sCI" 
+  
+							width="100%" 
+							height="200" 
+							frameborder="0" 
+							allow="autoplay; encrypted-media; picture-in-picture" 
+							allowfullscreen>
+						  </iframe>
+						</div>
+					  </div>
+					  <div class="card-body px-0 pt-3">
+						<h5 class="card-title text-white fw-bold">Video 1</h5>
+					  </div>
+					</div>
+				  </div>
+			
+				  <!-- Video 2 -->
+				  <div class="col-sm-6 col-lg-3 mb-4">
+					<div class="card bg-transparent overflow-hidden">
+					  <div class="position-relative rounded-3 overflow-hidden">
+						<div class="vimeo-video-container">
+						  <iframe 
+							src="https://www.youtube.com/embed/caHYdPG0sCI" 
+							width="100%" 
+							height="200" 
+							frameborder="0" 
+							allow="autoplay; encrypted-media; picture-in-picture" 
+							allowfullscreen>
+						  </iframe>
+						</div>
+					  </div>
+					  <div class="card-body px-0 pt-3">
+						<h5 class="card-title text-white fw-bold">Video 2</h5>
+					  </div>
+					</div>
+				  </div>
+			
+				  <!-- Video 3 -->
+				  <div class="col-sm-6 col-lg-3 mb-4">
+					<div class="card bg-transparent overflow-hidden">
+					  <div class="position-relative rounded-3 overflow-hidden">
+						<div class="vimeo-video-container">
+						  <iframe 
+							src="https://www.youtube.com/embed/EI0snblr7q8" 
+							width="100%" 
+							height="200" 
+							frameborder="0" 
+							allow="autoplay; encrypted-media; picture-in-picture" 
+							allowfullscreen>
+						  </iframe>
+						</div>
+					  </div>
+					  <div class="card-body px-0 pt-3">
+						<h5 class="card-title text-white fw-bold">Video 3</h5>
+					  </div>
+					</div>
+				  </div>
+			
+				  <!-- Repeat for remaining videos -->
+				  <!-- Video 4 -->
+				  <div class="col-sm-6 col-lg-3 mb-4">
+					<div class="card bg-transparent overflow-hidden">
+					  <div class="position-relative rounded-3 overflow-hidden">
+						<div class="vimeo-video-container">
+						  <iframe 
+							src="https://www.youtube.com/embed/RayzG7M4B_w" 
+							width="100%" 
+							height="200" 
+							frameborder="0" 
+							allow="autoplay; encrypted-media; picture-in-picture" 
+							allowfullscreen>
+						  </iframe>
+						</div>
+					  </div>
+					  <div class="card-body px-0 pt-3">
+						<h5 class="card-title text-white fw-bold">Video 4</h5>
+					  </div>
+					</div>
+				  </div>
+			
+				  <!-- Add additional video cards for other YouTube links similarly -->
+			
+				</div>
+			  </div>
+		</section>
+ 
+
+		<!-- Information Section -->
+		<section id="info-section">
+			<div class="container">
+				<div class="row g-4 align-items-center justify-content-between pb-lg-5">
+					
+					<!-- Main Content: Image -->
+					<div class="col-lg-6 mt-0 position-relative">
+						<img class="rounded w-100" src="assets/images/blog/1by1/mask.jpg" alt="Image Description">
+					</div>
+
+					<!-- Sidebar -->
+					<div class="col-lg-4">
+						<!-- Card Section -->
+						<div class="card card-overlay-bottom h-100" style="background-image:url('assets/images/blog/1by1/11.jpg'); background-position: center; background-size: cover;">
+							<span class="card-featured" title="Featured post"><i class="fas fa-star"></i></span>
+							<div class="card-img-overlay d-flex flex-column justify-content-center align-items-center p-3 p-sm-5">
+								<!-- Play Button -->
+								<div class="position-absolute top-50 start-50 translate-middle">
+									<a href="https://youtu.be/n_Cn8eFo7u8" class="icon-lg bg-primary d-block text-white rounded-circle" data-glightbox data-gallery="y-video">
+										<i class="bi bi-play-btn"></i>
+									</a>
+								</div>
+								<!-- Card Title -->
+								<div class="w-100 mt-auto text-center">
+									<h3 class="text-white">
+										<a href="post-single.html" class="btn-link text-reset fw-normal">Jayeoba Boluwatife</a>
+									</h3>
+									<h5><b>Mask</b></h5>
+								</div>
+							</div>
+						</div>
+						<!-- Card END -->
+
+						<!-- About Me Section -->
+						<div class="mt-4">
+							<h2 class="mb-4 text-dark text-center">Boluwatife Jayeoba</h2>
+							<p class="text-center">Hello! I’m Mask The Director, a passionate filmmaker dedicated to capturing stories through the lens. With a background in various film styles and techniques, I strive to create impactful visual experiences.</p>
+							<div class="text-center mt-4">
+								<a class="btn btn-primary" href="contact.html">Contact Me</a>
+							</div>
+						</div>
+						<!-- About Me END -->
+
+						<!-- Social Media Section -->
+						<div class="row mt-4 g-2 text-center">
+							<!-- Facebook -->
+							<div class="col-6 col-sm-3">
+								<a href="#" class="bg-facebook rounded text-white-force p-3 d-block">
+									<i class="fab fa-facebook-square fs-5 mb-2"></i>
+									<h6 class="m-0">1.5K</h6>
+									<span class="small">Fans</span>
+								</a>
+							</div>
+							<!-- Instagram -->
+							<div class="col-6 col-sm-3">
+								<a href="#" class="bg-instagram-gradient rounded text-white-force p-3 d-block">
+									<i class="fab fa-instagram fs-5 mb-2"></i>
+									<h6 class="m-0">1.8M</h6>
+									<span class="small">Followers</span>
+								</a>
+							</div>
+							<!-- Youtube -->
+							<div class="col-6 col-sm-3">
+								<a href="#" class="bg-youtube rounded text-white-force p-3 d-block">
+									<i class="fab fa-youtube-square fs-5 mb-2"></i>
+									<h6 class="m-0">22K</h6>
+									<span class="small">Subs</span>
+								</a>
+							</div>
+							<!-- Twitter -->
+							<div class="col-6 col-sm-3">
+								<a href="#" class="bg-twitter rounded text-white-force p-3 d-block">
+									<i class="fab fa-twitter-square fs-5 mb-2"></i>
+									<h6 class="m-0">5K</h6>
+									<span class="small">Followers</span>
+								</a>
+							</div>
+						</div>
+						<!-- Social Media END -->
+					</div>
+					<!-- Sidebar END -->
+
+				</div>
+			</div>
+		</section>
+  
+	  </div>
+<!-- Custom CSS for Styling -->
+<style>
+    /* Centering and Background Styling */
+    .text-center {
+        background-color: #ffffff;
+        color: #4e4949;
+    }
+
+    /* Logo Container Styling */
+    .logo-container {
+        display: inline-block;
+        padding: 8px;
+        border: 4px solid #D2691E;
+        border-radius: 50%;
+    }
+
+    /* Logo Image Styling */
+    .logo-image {
+        max-width: 25%;
+        height: auto;
+    }
+
+    /* Button Styling with Theme Colors */
+    .btn-outline-secondary {
+        border: 2px solid #4e4949;
+        color: #4e4949;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .btn-outline-secondary:hover,
+    .toggle-btn.active {
+        background-color: #4e4949;
+        color: #fff;
+    }
+
+    /* Card Styles */
+    .card {
+        border-radius: 12px;
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        color: #fff;
+    }
+
+    .card-overlay {
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        color: #fff;
+    }
+
+    .card-overlay:hover {
+        transform: scale(1.05);
+        box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Vimeo Video Container Styling */
+    .vimeo-video-container {
+        position: relative;
+        width: 100%;
+        padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    }
+
+    .vimeo-video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+    }
+
+    /* Toggle Button Active Category Styling */
+    .category-content {
+        display: none;
+    }
+
+    .active-category {
+        display: block;
+    }
+</style>
+
+<!-- JavaScript for Category Filtering and Smooth Scroll -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const toggleButtons = document.querySelectorAll('.toggle-btn');
+        const categoryContents = document.querySelectorAll('.category-content');
+
+        toggleButtons.forEach(button => {
+            button.addEventListener('click', function () {
+                const category = this.getAttribute('data-category');
+                categoryContents.forEach(content => {
+                    content.classList.toggle('active-category', category === 'all' || content.id === category);
+                });
+                toggleButtons.forEach(btn => btn.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+
+        toggleButtons[0].click();  // Show 'All' content by default
+    });
+
+    function scrollToInfo() {
+        document.getElementById('info-section').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function scrollToCollaborators() {
+        document.getElementById('collaborators-section').scrollIntoView({ behavior: 'smooth' });
+    }
+</script>
+	
+	<h2 class="text-center mb"></h2>
+
+
+
+
+
+  
+<!-- Toggle Content Section END -->
+
+
+    <!-- JavaScript for Toggling Content -->
+    <script>
+    function filterContent(category) {
+        const contentItems = document.querySelectorAll('.content-item');
+        
+        contentItems.forEach(item => {
+            if (category === 'all') {
+                item.style.display = 'block'; // Show all items
+            } else if (item.classList.contains(category)) {
+                item.style.display = 'block'; // Show items that match category
+            } else {
+                item.style.display = 'none'; // Hide items that do not match
+            }
+        });
+    }
+
+    function scrollToInfo() {
+        const infoSection = document.getElementById('info-section');
+        infoSection.scrollIntoView({ behavior: 'smooth' });
+    }
+    </script>
+
+    <style>
+        .content-item {
+            display: none; /* Hide all items by default */
+        }
+        
+        /* Display items on initial load (or for 'all') */
+        .content-item.music, .content-item.commercial, .content-item.film, .content-item.photo {
+            display: block; /* Show all items */
+        }
+    </style>
+
+<!-- =======================
+Main hero END -->
+
+
+
+
+
+
+
+
+</main>
+<!-- **************** MAIN CONTENT END **************** -->
+
+
+
+    <!-- WELCOME -->
+    <section>
+      <div class="container">
+        <div class="row justify-content-center py-14 bg-cover" style="background-image: url(assets/imges/adv-1.png);">
+          <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+
+            <!-- Heading -->
+            <h1 class="mb-0 text-center text-white">
+              We believe we can all make a stylish.
+            </h1>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OUR STORY -->
+    <section class="py-12">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-12 col-md-6">
+
+            <!-- Image -->
+            <img src="assets/img/products/product-62.jpg" alt="..." class="img-fluid w-50">
+
+            <!-- Image -->
+            <div class="text-end mt-n13 mt-lg-n15 mb-10 mb-md-0">
+              <img src="assets/img/products/product-63.jpg" alt="..." class="img-fluid w-75">
+            </div>
+
+          </div>
+          <div class="col-12 col-md-6 col-lg-5">
+
+            <!-- Preheading -->
+            <h6 class="heading-xxs mb-3 text-gray-400">
+              <!-- Director's Reel -->
+            </h6>
+
+            <!-- Heading -->
+            <h2 class="mb-7">Director's Reel</h2>
+
+            <!-- Text -->
+            <p class="fs-lg text-muted">
+              Open created shall two he second moving whose. He face
+              whose two upon, fowl behold waters. Fly there their day
+              creepeth. Darkness beginning spirit after. Creepeth subdue.
+              Brought may, first. Under living that.
+            </p>
+            <p class="mb-0 fs-lg text-muted">
+              Third. For morning whales saw were had seed can't divide
+              it light shall moveth, us blessed given wherein.
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="py-12 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+
+            <!-- Heading -->
+            <h2 class="mb-10">About Us</h2>
+
+          </div>
+        </div>
+        <div class="row justify-content-center mb-9 fs-lg text-gray-500">
+          <div class="col-12 col-md-5">
+
+            <p>
+              And whales be, earth thing seed whales, forth beginning
+              made may beginning sea great void likeness open beast
+              firmament very living cattle divided fruitful may. Sea
+              created saw fifth so thing signs meat.
+            </p>
+            <p class="mb-md-0">
+              Green fruit meat stars, creepeth second he meat. Appear
+              is fruitful given Winged. Gathered second so us saying
+              blessed, he.
+            </p>
+
+          </div>
+          <div class="col-12 col-md-6 col-lg-5 fs-lg text-gray-500">
+
+            <p>
+              Male was. Itself. Have isn't first divide and i day, moving
+              she'd appear open dominion sea him days multiply our,
+              make firmament rule there made set midst creeping let
+              won't morning their great fish.
+            </p>
+            <p class="mb-0">
+              Unto over unto together first shall greater yielding made
+              dominion fill. First waters bring made blessed likeness
+              bring forth had. Creature one.
+            </p>
+
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 text-center">
+
+            <!-- Button -->
+            <a class="btn btn-dark" href="{% url 'shop' %}">
+              Contact Us <i class="fe fe-arrow-right ms-2"></i>
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+<!-- Back to top -->
+<div class="back-top"><i class="bi bi-arrow-up-short"></i></div>
+
+<!-- =======================
+JS libraries, plugins and custom scripts -->
+
+<!-- Bootstrap JS -->
+<script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Vendors -->
+<script src="assets/vendor/tiny-slider/tiny-slider.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.js"></script>
+
+<!-- Template Functions -->
+
+</body>
+</html>
+
+
